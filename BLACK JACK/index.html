@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>♠️ BLACKJACK ♣️</h1>
+
+    <div id="setup-container">
+        <input type="text" id="name-input" placeholder="Enter Name">
+        <input type="number" id="chips-input" placeholder="Starting Chips ($)" min="50">
+        <button onclick="startGameSetup()">START</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Your Cards:</p>
+        <p id="sum-el">Sum:</p>
+
+        <input type="number" id="bet-input" placeholder="Enter Bet $" min="1">
+        <button onclick="placeBet()">PLACE BET</button>
+        <button onclick="newCard()">NEW CARD</button>
+        <button onclick="resetGame()">RESET</button>
+
+        <p id="player-el"></p>
+        <p id="bet-el">Current Bet: $0</p>
+        <p id="wins-el">Wins: 0</p>
+        <p id="losses-el">Losses: 0</p>
+    </div>
+
+
+
+        <script src="index.js"></script>
+</body>
+</html>
